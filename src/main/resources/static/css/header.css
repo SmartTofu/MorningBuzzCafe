@@ -1,0 +1,98 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: #6a5d4d;
+}
+
+.navigation .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    height: 35px;
+}
+
+.navigation .logo_img {
+    margin-right: 10px;
+}
+
+.navigation .menu-list{
+    display: flex;
+    position: relative;
+}
+
+.menu-list .menu-item {
+    list-style: none;
+    position: relative;
+    height: 20px;
+}
+
+.menu-list .menu-item a {
+    color: #fff;
+    font-size: 15px;
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+.menu-item a:hover{
+    text-decoration: underline;
+}
+
+.burger, .burger + label{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+
+    .menu-list *{
+        display: none;
+    }
+
+    .burger, .burger + label{
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        z-index: 50;
+        cursor: pointer;
+    }
+
+    nav label::before{
+        content: '☰';
+        color:#ffffff;
+    }
+
+    .burger + label{
+        display: block;
+    }
+
+    .burger:checked ~ .menu-list{
+        height: auto;
+        display: block;
+    }
+
+    .burger:checked ~ .menu-list *{
+        display: block;
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    nav label{
+        transition: 0.3s;
+    }
+
+    .burger:checked ~ label{
+        transform: rotate(90deg);
+    }
+
+    .navigation{
+        justify-content: left;
+    }
+}
