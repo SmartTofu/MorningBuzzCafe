@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"  href="/css/header.css">
+    <link rel="stylesheet"  href="/css/menu.css">
+</head>
+<body>
+<header th:insert="parts/header :: header"></header>
+<div class="banner">
+    <h2>Добавить новую позицию в меню</h2>
+    <form id="postForm">
+        <input id="data_1" type="text" name="name" placeholder="Введите название позиции" class="form-control"><br>
+        <input id="data_2" type="text" name="amount" placeholder="Введите количество продуктов" class="form-control"><br>
+        <button type="submit" class="btn btn-success">Добавить позицию</button>
+    </form>
+    <script>
+        document.getElementById("postForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Предотвращаем стандартное поведение формы
+            let formData = new FormData(document.getElementById("postForm"));
+            fetch("/products", {
+                method: "POST",
+                body: formData
+            }).then(response => {
+                // Обработка ответа, если необходимо
+                console.log("POST запрос выполнен успешно");
+            }).catch(error => {
+                console.error('Ошибка при отправке запроса:', error);
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

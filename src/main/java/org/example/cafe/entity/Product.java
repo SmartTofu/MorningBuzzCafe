@@ -20,6 +20,6 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
     private String name;
-    private Short amount;
+    private String amount;
 
 }

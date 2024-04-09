@@ -12,7 +12,7 @@ public class HomeController {
         return "home";
     }
 
-    @GetMapping("/home.html")
+    @GetMapping("/home")
     public String home(Model model) {
         return "home";
     }

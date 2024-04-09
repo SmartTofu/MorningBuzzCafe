@@ -17,3 +17,23 @@
     flex-direction: column;
     overflow: hidden;
 }
+
+input {
+    width: 150%;
+    height: 50%;
+    margin: 10%;
+}
+
+button {
+    width: 150%;
+    height: 50%;
+    margin: 10%;
+}
+
+form {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
