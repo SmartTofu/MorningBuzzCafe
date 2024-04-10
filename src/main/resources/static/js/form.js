@@ -1,7 +1,7 @@
 document.getElementById("postForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Предотвращаем стандартное поведение формы
     let formData = new FormData(document.getElementById("postForm"));
-    fetch("/products", {
+    fetch("/admin", {
         method: "POST",
         body: formData
     }).then(response => {

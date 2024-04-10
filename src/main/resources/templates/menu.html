@@ -8,7 +8,10 @@
 <body>
 <header th:insert="parts/header :: header"></header>
 <div class="banner">
-    <h2>Здесь будет меню</h2>
+    <h2>Наше меню</h2>
+    <div th:each="el : ${positions}">
+        <h3 th:text="${el.name}"/>
+    </div>
 </div>
 </body>
 </html>
