@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Added CRUD-service and ProductController">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AddMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addMenu.html" afterDir="false" />
+    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Add post-requests form, fixed controllers, updated CRUD-service">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/dto/ProductDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addMenu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712614471473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add post-requests form, fixed controllers, updated CRUD-service">
+      <option name="closed" value="true" />
+      <created>1712696429954</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712696429955</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -164,6 +170,7 @@
     <MESSAGE value="Added 1 part of home page + controller for menu" />
     <MESSAGE value="Added some features for database" />
     <MESSAGE value="Added CRUD-service and ProductController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CRUD-service and ProductController" />
+    <MESSAGE value="Add post-requests form, fixed controllers, updated CRUD-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add post-requests form, fixed controllers, updated CRUD-service" />
   </component>
 </project>

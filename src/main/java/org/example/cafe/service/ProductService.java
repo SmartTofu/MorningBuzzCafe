@@ -17,7 +17,8 @@ public class ProductService {
     public Product create(ProductDTO dto) {
         Product product = Product.builder()
                 .name(dto.getName())
-                .amount(dto.getAmount())
+                .price(dto.getPrice())
+                .text(dto.getText())
                 .build();
         return productRepository.save(product);
     }

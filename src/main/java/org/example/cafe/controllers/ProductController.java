@@ -17,8 +17,9 @@ public class ProductController {
 
     private final ProductService productService;
     @RequestMapping(value = "/products", method = RequestMethod.POST)
-    public ResponseEntity<Product> create(@RequestParam String name, @RequestParam String amount, Model model) {
-        ProductDTO dto = new ProductDTO(name, amount);
+    public ResponseEntity<Product> create(@RequestParam String name, @RequestParam String price,
+                                          @RequestParam String text, Model model) {
+        ProductDTO dto = new ProductDTO(name, price, text);
         return new ResponseEntity<>(productService.create(dto), HttpStatus.OK);
     }
 
