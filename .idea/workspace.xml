@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Update product-entity and design form">
+    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Changed controller hierarchy + downloading data from database">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/pictures/coffee.avif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AddMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/MenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +69,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kirill/IdeaProjects/MorningBuzzCafe&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -76,9 +78,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kirill\IdeaProjects\MorningBuzzCafe\src\main\resources\static\css\pictures" />
       <recent name="C:\Users\Kirill\IdeaProjects\MorningBuzzCafe\src\main\resources\static\css" />
       <recent name="C:\Users\Kirill\IdeaProjects\MorningBuzzCafe\src\main\resources" />
-      <recent name="C:\Users\Kirill\IdeaProjects\MorningBuzzCafe\src\main\resources\static\css\pictures" />
       <recent name="C:\Users\Kirill\IdeaProjects\MorningBuzzCafe\src\main\resources\templates" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -169,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712749956286</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed controller hierarchy + downloading data from database">
+      <option name="closed" value="true" />
+      <created>1712765570025</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712765570026</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,6 +189,7 @@
     <MESSAGE value="Added CRUD-service and ProductController" />
     <MESSAGE value="Add post-requests form, fixed controllers, updated CRUD-service" />
     <MESSAGE value="Update product-entity and design form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update product-entity and design form" />
+    <MESSAGE value="Changed controller hierarchy + downloading data from database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed controller hierarchy + downloading data from database" />
   </component>
 </project>

@@ -1,0 +1,12 @@
+<div th:fragment="card" class="wrapper">
+    <div class="product-img"></div>
+    <div class="product-info">
+        <div class="product-text">
+            <h1 th:text="${el.name}"/>
+            <p th:text="${el.text}"/>
+        </div>
+        <div class="product-price-btn">
+            <p><span class="card_span" th:text="${el.price}"/> Руб</p>
+        </div>
+    </div>
+</div>

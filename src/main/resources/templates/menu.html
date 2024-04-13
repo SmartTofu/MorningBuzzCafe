@@ -5,12 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet"  href="/css/header.css">
     <link rel="stylesheet"  href="/css/menu.css">
+    <link rel="stylesheet"  href="/css/card.css">
+</head>
 <body>
 <header th:insert="parts/header :: header"></header>
 <div class="banner">
     <h2>Наше меню</h2>
-    <div th:each="el : ${positions}">
-        <h3 th:text="${el.name}"/>
+    <div th:each="el : ${positions}" class="menu_container">
+        <div th:insert="parts/card :: card"></div>
     </div>
 </div>
 </body>

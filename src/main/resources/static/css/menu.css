@@ -7,7 +7,7 @@
 
 .banner {
     position: relative;
-    height: 100vh;
+    /*height: 100vh;*/
     background-size: cover;
     background-position: center;
     background-color: #8b734b;
@@ -20,46 +20,7 @@
     overflow: hidden;
 }
 
-input {
-    width: 200%;
-    height: 2rem;
-    margin: 3%;
-    padding: 2px;
-
-    background: none;
-    border: 0;
-    border-bottom: solid 2px #474b4e;
-}
-
-input:focus{
-    outline: none;
-}
-
-button {
-    width: 100%;
-    height: 3rem;
-    margin: 10%;
-}
-
-form {
-    height: 90%;
+.menu_container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.paragraph {
-    margin: 10px;
-}
-
-.panel {
-    position: relative;
-    height: 70%;
-    width: 75vh;
-    background-color: #dcdcdc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
