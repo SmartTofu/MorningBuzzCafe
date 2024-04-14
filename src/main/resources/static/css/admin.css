@@ -81,6 +81,7 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .paragraph {
@@ -97,4 +98,8 @@ form {
     justify-content: center;
     flex-direction: column;
     margin: 15px;
+}
+
+.answer_h3{
+    margin-bottom: 30px;
 }

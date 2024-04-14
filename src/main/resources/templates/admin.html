@@ -20,6 +20,14 @@
         <script src="/js/post_form.js"></script>
     </div>
     <div class="panel">
+        <h2 class="paragraph">Узнать ID по названию</h2>
+        <form id="askForm" action="admin" method="get">
+            <input id="ask_data_1" type="text" name="ask_name" placeholder="Введите название позиции" class="form-control"><br>
+            <button id="ask_submit_button" type="submit" class="btn-0">Узнать id</button>
+        </form>
+        <h3 th:text="${answer}" class="answer_h3"></h3>
+    </div>
+    <div class="panel">
         <h2 class="paragraph">Удалить позицию из меню</h2>
         <form id="deleteForm" >
             <input id="delete_data_1" type="text" name="delete_id" placeholder="Введите идентификатор позиции" class="form-control"><br>

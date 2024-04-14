@@ -18,9 +18,22 @@ public class AdminController {
 
     private final ProductService productService;
 
-    // Обработчики GET и POST запросов по адресу "/admin"
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
-    public String addMenu(Model model) {
+    public String addMenu(@RequestParam(value="ask_name", required = false) String ask_name, Model model) {
+        List<Product> positions = productService.readAll();
+        if (ask_name == null) {
+            String answer = "Нет названия - нет ID";
+            model.addAttribute("answer", answer);
+        }
+        else {
+            long current_id = findIdByName(ask_name, positions);
+            if (current_id == -1) {
+                model.addAttribute("answer", "Такой позиции нет");
+            }
+            else {
+                model.addAttribute("answer", "ID данной позиции: " + current_id);
+            }
+        }
         return "admin";
     }
 
@@ -42,4 +55,11 @@ public class AdminController {
         productService.delete(delete_id);
     }
 
+    public long findIdByName(String name, List<Product> list) {
+        for (int i = 0; i < list.size(); ++i) {
+            if (list.get(i).getName().equals(name))
+                return list.get(i).getId();
+        }
+        return -1;
+    }
 }
