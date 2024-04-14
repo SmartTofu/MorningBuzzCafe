@@ -6,8 +6,8 @@
 }
 
 .banner {
-    position: relative;
     height: 100vh;
+    position: relative;
     background-size: cover;
     background-position: center;
     background-color: #8b734b;
@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     overflow: hidden;
 }
 
@@ -58,6 +58,23 @@ button {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 
+.btn-1 {
+  background: #e34234;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-1:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #e34234;
+}
+
 form {
     height: 90%;
     display: flex;
@@ -71,7 +88,7 @@ form {
 }
 
 .panel {
-    position: relative;
+    /*position: relative;*/
     height: 70%;
     width: 75vh;
     background-color: #fff /*#dcdcdc*/;
@@ -79,4 +96,5 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 15px;
 }

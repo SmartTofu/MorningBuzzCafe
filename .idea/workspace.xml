@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Changed controller hierarchy + downloading data from database">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/pictures/coffee.avif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/card.html" afterDir="false" />
+    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Designed cards for menu amd redesigned admin-page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/PostmanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/delete_form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/post_form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/form.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
     </list>
@@ -179,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712765570026</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Designed cards for menu amd redesigned admin-page">
+      <option name="closed" value="true" />
+      <created>1713052486576</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713052486577</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -190,6 +202,7 @@
     <MESSAGE value="Add post-requests form, fixed controllers, updated CRUD-service" />
     <MESSAGE value="Update product-entity and design form" />
     <MESSAGE value="Changed controller hierarchy + downloading data from database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed controller hierarchy + downloading data from database" />
+    <MESSAGE value="Designed cards for menu amd redesigned admin-page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Designed cards for menu amd redesigned admin-page" />
   </component>
 </project>

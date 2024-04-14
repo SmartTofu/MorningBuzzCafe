@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
-    position: fixed;
+    position: relative;
     z-index: 100;
     width: 100%;
     background: #6a5d4d;
