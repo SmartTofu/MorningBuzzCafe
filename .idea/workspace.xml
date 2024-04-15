@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Added own controller for each page and delete-form">
+    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Updated get-mapping for admin-page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713107880097</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Updated get-mapping for admin-page">
+      <option name="closed" value="true" />
+      <created>1713123315933</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713123315934</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,6 +213,7 @@
     <MESSAGE value="Changed controller hierarchy + downloading data from database" />
     <MESSAGE value="Designed cards for menu amd redesigned admin-page" />
     <MESSAGE value="Added own controller for each page and delete-form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added own controller for each page and delete-form" />
+    <MESSAGE value="Updated get-mapping for admin-page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated get-mapping for admin-page" />
   </component>
 </project>
