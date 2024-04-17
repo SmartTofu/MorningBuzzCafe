@@ -8,10 +8,10 @@
     <link rel="stylesheet"  href="/css/card.css">
 </head>
 <body>
-<header th:insert="parts/header :: header"></header>
+<header th:insert="~{parts/header :: header}"></header>
 <div class="banner">
     <div th:each="el : ${positions}" class="menu_container">
-        <div th:insert="parts/card :: card"></div>
+        <div th:insert="~{parts/card :: card}"></div>
     </div>
 </div>
 </body>
