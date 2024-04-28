@@ -23,3 +23,48 @@
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+.bar{
+  margin: 20px auto;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchbar{
+  height:45px;
+  border: 3px solid #27AE60;
+  width:400px;
+  font-size:16px;
+  outline: none;
+  padding-left: 7px;
+}
+
+button {
+    width: 100px;
+    height: 45px;
+}
+
+.btn-0 {
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.bar:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+.btn-0:hover {
+    background: #3cb371;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #3cb371;
+}
