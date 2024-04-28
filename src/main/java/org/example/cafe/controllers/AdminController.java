@@ -40,7 +40,7 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/admin", method = RequestMethod.POST)
-    public ResponseEntity<Product> create(@RequestParam String name, @RequestParam String price,
+    public ResponseEntity<Product> create(@RequestParam String name, @RequestParam Integer price,
                                           @RequestParam String text, Model model) {
         ProductDTO dto = new ProductDTO(name, price, text);
         return new ResponseEntity<>(productService.create(dto), HttpStatus.OK);

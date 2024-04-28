@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #8b734b;
+}
+
 .banner {
     position: relative;
     background-size: cover;

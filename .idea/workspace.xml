@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Add search-feature to menu-page">
+    <list default="true" id="589b9179-27ae-4118-8934-291faf22bb10" name="Changes" comment="Add filter-feature to menu-page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/reg.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/reg_form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/entity/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cafe/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cafe/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714304854537</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add filter-feature to menu-page">
+      <option name="closed" value="true" />
+      <created>1714311155763</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714311155764</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -240,6 +259,7 @@
     <MESSAGE value="Added some security features" />
     <MESSAGE value="Update Spring to 3.2.4 version and add security-system for web-application" />
     <MESSAGE value="Add search-feature to menu-page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add search-feature to menu-page" />
+    <MESSAGE value="Add filter-feature to menu-page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add filter-feature to menu-page" />
   </component>
 </project>

@@ -29,20 +29,6 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-//        return http.csrf(AbstractHttpConfigurer::disable)
-//                .authorizeHttpRequests(auth -> auth.requestMatchers(new AntPathRequestMatcher("/**"))
-//                        .permitAll()
-//                        .requestMatchers(new AntPathRequestMatcher("/admin")).authenticated())
-//                .formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
-//                .build();
-
-//        return http.csrf(AbstractHttpConfigurer::disable)
-//                .authorizeHttpRequests(auth -> auth.requestMatchers(new AntPathRequestMatcher("/**"))
-//                        .permitAll().anyRequest()
-//                        .authenticated())
-//                .formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
-//                .build();
-
         return http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth.requestMatchers(new AntPathRequestMatcher("/**"))
                         .permitAll().anyRequest()

@@ -20,6 +20,7 @@ public class UserService {
         AppUser user = AppUser.builder()
                 .name(dto.getName())
                 .password(dto.getPassword())
+                .email(dto.getEmail())
                 .roles(dto.getRoles())
                 .build();
         user.setPassword(passwordEncoder.encode(user.getPassword()));

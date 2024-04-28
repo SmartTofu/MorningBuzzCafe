@@ -20,5 +20,7 @@ public class AppUser {
     @Column(unique = true)
     private String name;
     private String password;
+    @Column(unique = true)
+    private String email;
     private String roles;
 }
