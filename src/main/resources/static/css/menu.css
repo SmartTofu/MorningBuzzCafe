@@ -43,12 +43,9 @@
   padding-left: 7px;
 }
 
-button {
-    width: 100px;
-    height: 45px;
-}
-
 .btn-0 {
+  width: 100px;
+  height: 45px;
   background: #27AE60;
   font-weight: bold;
   color: white;
@@ -61,10 +58,33 @@ button {
 }
 
 .bar:hover{
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    box-shadow: 0 0 0 2px white;
 }
 
 .btn-0:hover {
     background: #3cb371;
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #3cb371;
+    box-shadow: 0 0 0 2px white;
+}
+
+.btn-1 {
+  width: 500px;
+  height: 45px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-1:hover {
+     background: #3cb371;
+     box-shadow: 0 0 0 2px white;
+}
+
+.filter_bar {
+    display: none;
 }

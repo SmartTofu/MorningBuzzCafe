@@ -15,6 +15,10 @@
             <input id="data_1" type="text" name="ask_name" class="searchbar" title="Search" placeholder="Поиск напитка по названию">
             <button id="search_button" type="submit" class="btn-0">Найти</button>
         </form>
+        <form id="filter" class="bar" action="menu" method="get">
+            <input id="data_5" type="text" name="filter" class="filter_bar" value="filter" title="Filter">
+            <button id="filter_button" type="submit" class="btn-1">Фильтровать по цене</button>
+        </form>
     </div>
     <div th:each="el : ${positions}" class="menu_container">
         <div th:insert="~{parts/card :: card}"></div>

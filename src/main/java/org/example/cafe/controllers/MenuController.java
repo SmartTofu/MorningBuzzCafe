@@ -1,8 +1,14 @@
 package org.example.cafe.controllers;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
 import lombok.AllArgsConstructor;
 import org.example.cafe.entity.Product;
 import org.example.cafe.service.ProductService;
+import org.hibernate.query.Query;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,9 +22,13 @@ public class MenuController {
 
     private final ProductService productService;
 
+    @PersistenceContext
+    private EntityManager entityManager;
+
     // Обработчик страницы с каталогом
     @GetMapping("/menu")
-    public String menu(@RequestParam(value="ask_name", required = false) String ask_name, Model model) {
+    public String menu(@RequestParam(value="ask_name", required = false) String ask_name,
+            @RequestParam(value="filter", required = false) String filter, Model model) {
         List<Product> positions = productService.readAll();
         if (ask_name == null) {
             model.addAttribute("positions", positions);
@@ -31,6 +41,16 @@ public class MenuController {
             else {
                 model.addAttribute("positions", product);
             }
+        }
+
+        if (filter != null) {
+            CriteriaBuilder builder = entityManager.getCriteriaBuilder();
+            CriteriaQuery<Product> productCriteriaQuery = builder.createQuery(Product.class);
+            Root<Product> root = productCriteriaQuery.from(Product.class);
+            productCriteriaQuery.select(root).orderBy(builder.asc(root.get("price")));
+            Query<Product> query = (Query<Product>) entityManager.createQuery(productCriteriaQuery);
+            positions = query.getResultList();
+            model.addAttribute("positions", positions);
         }
         return "menu";
     }
