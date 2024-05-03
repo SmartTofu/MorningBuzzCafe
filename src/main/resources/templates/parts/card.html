@@ -7,6 +7,11 @@
         </div>
         <div class="product-price-btn">
             <p><span class="card_span" th:text="${el.price}"/> Руб</p>
+            <form id="order_form" class="order_form">
+                <input id="data_9" type="text" name="name" class="order_bar" th:value="${el.name}" title="Order">
+                <button id="order_button" type="submit" class="btn-1">Добавить в заказ</button>
+            </form>
+            <script src="/js/order_form.js"></script>
         </div>
     </div>
 </div>

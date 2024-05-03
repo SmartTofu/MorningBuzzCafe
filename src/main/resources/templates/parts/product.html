@@ -1,0 +1,10 @@
+<div th:fragment="product" class="product">
+    <div class="product-details">
+        <div class="product-title" th:text="${el.name}" />
+        <p class="product-description"th:text="${el.text}" />
+        <div class="product-price" th:text="${el.price}" />
+    </div>
+    <div class="product-removal">
+        <button class="remove-product">Удалить</button>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"  href="/css/header.css">
+    <link rel="stylesheet"  href="/css/cart.css">
+    <link rel="stylesheet"  href="/css/footer.css">
+</head>
+<body>
+<header th:insert="~{parts/header :: header}"></header>
+
+<div class="banner">
+    <h1>Ваш заказ</h1>
+    <div th:each="el : ${orders}" class="shopping-cart">
+        <div th:insert="~{parts/product :: product}"></div>
+    </div>
+    <button class="checkout">Заказать</button>
+</div>
+
+<div th:insert="~{parts/footer :: footer}"></div>
+</body>
+</html>

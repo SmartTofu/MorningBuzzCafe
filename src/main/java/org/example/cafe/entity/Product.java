@@ -21,4 +21,8 @@ public class Product {
     private String name;
     private Integer price;
     private String text;
+
+    @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+    @JoinColumn
+    private AppUser user;
 }

@@ -93,7 +93,7 @@
     display: inline-block;
     height: 50px;
     width: 176px;
-    margin: 0 40px 0 16px;
+    margin: 25px 40px 0 16px;
     box-sizing: border-box;
     border: transparent;
     border-radius: 60px;
@@ -110,4 +110,8 @@
 
   .product-price-btn button:hover {
     background-color: #79b0a1;
+  }
+
+  .order_bar {
+      display: none;
   }
