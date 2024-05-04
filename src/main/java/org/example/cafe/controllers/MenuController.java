@@ -14,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -28,7 +29,9 @@ public class MenuController {
     // Обработчик страницы с каталогом
     @GetMapping("/menu")
     public String menu(@RequestParam(value="ask_name", required = false) String ask_name,
-            @RequestParam(value="filter", required = false) String filter, Model model) {
+                       @RequestParam(value="filter", required = false) String filter,
+                       @RequestParam(value="card_name", required = false) String card_name,
+                       Principal principal, Model model) {
         List<Product> positions = productService.readAll();
         if (ask_name == null) {
             model.addAttribute("positions", positions);
@@ -52,6 +55,12 @@ public class MenuController {
             positions = query.getResultList();
             model.addAttribute("positions", positions);
         }
+
+        if (card_name != null) {
+            Product product = findProductByName(card_name, positions);
+            productService.addToOrder(product, principal);
+        }
+
         return "menu";
     }
 

@@ -24,7 +24,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    min-height: 75vh;
+    min-height: 77vh;
 }
 .product-removal {
     margin-left: 10px;
@@ -84,4 +84,8 @@ h1 {
 
 .checkout:hover {
   background-color: #494;
+}
+
+.del_bar {
+    display: none;
 }

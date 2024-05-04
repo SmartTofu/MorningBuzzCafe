@@ -28,14 +28,6 @@ public class PostmanController {
         return new ResponseEntity<>(productService.create(dto), HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/postman/add", method = RequestMethod.POST)
-    public ResponseEntity<Product> add(@RequestParam(value="name", required = false) String name,
-                                       Principal principal) {
-        List<Product> positions = productService.readAll();
-        Product product = findProductByName(name, positions);
-        return new ResponseEntity<>(productService.addToOrder(product, principal), HttpStatus.OK);
-    }
-
     @RequestMapping(value = "/postman", method = RequestMethod.PUT)
     public ResponseEntity<Product> update(@RequestBody Product product) {
         return new ResponseEntity<>(productService.update(product), HttpStatus.OK);
@@ -45,13 +37,5 @@ public class PostmanController {
     public HttpStatus delete(@PathVariable Long id) {
         productService.delete(id);
         return HttpStatus.OK;
-    }
-
-    public Product findProductByName(String name, List<Product> list) {
-        for (int i = 0; i < list.size(); ++i) {
-            if (list.get(i).getName().equals(name))
-                return list.get(i);
-        }
-        return null;
     }
 }
